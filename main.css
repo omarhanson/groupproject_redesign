@@ -320,6 +320,8 @@ hr {
   margin:8px;
 }
 
+.trans, h3, p{text-align: left;}
+
 .full{width: 100%;}
 
 .sports2{display: block;}
