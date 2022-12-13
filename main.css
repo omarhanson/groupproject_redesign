@@ -8,15 +8,15 @@ FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 
 /* navigation-section-start */
 nav {
   background-color: #d20b12;
-   height: 80px; 
-  width: 100%;
+   /* height: 80px;  */
+  width: 100%; 
   display: flex;
   z-index: 1;
   top: 0;
   
-  position: fixed;
+  position: fixed;  
   
-} 
+}  
 
   /* .nav a{padding: 2px; }   */
 
@@ -172,7 +172,7 @@ i {
 .latest {
   background-color: #333;
   color: #fff; 
-  margin-top: 50px;
+  margin-top: 50px; 
   
 }
 
@@ -209,7 +209,7 @@ i {
   width: 100%;
   height: 200px;
   
-}
+} 
 
 .mySlides {
   display: none;
@@ -217,11 +217,11 @@ i {
 
 img {
   vertical-align: middle;
-}
+} 
 
 /* Slideshow container */
 .slideshow-container {
-max-width: 1000px; 
+max-width: 1000px;  
   margin: auto;
 }
 
@@ -264,7 +264,7 @@ max-width: 1000px;
   color: #f2f2f2;
   font-size: 15px;
   padding: 16px 12px;
-  width: 100%;
+   width: 100%; 
   text-align: center;
 }
 
@@ -273,7 +273,7 @@ max-width: 1000px;
   color: #000000;
   font-size: 20px;
   padding: 8px 12px;
-  position: absolute;
+  position: absolute; 
 }
 
 /* The dots/bullets/indicators */
@@ -309,17 +309,17 @@ max-width: 1000px;
 hr {
   border: solid 1px;
   color: #fff;
-  width: 100%;
+   width: 100%; 
 }
 
 .line {
   margin: 0 auto 0 auto;
-  width: 90%;
+  width: 90%; 
 }
 
 .image-container{
   margin: 10px;
-  flex-basis: 100%;
+  flex-basis: 100%; 
   
 }
 
@@ -338,8 +338,8 @@ hr {
 
 
 .manpic {
-   width: 100%;
-  height: 200px; 
+   width: 100%; 
+ height: 200px;  
   
   
 }
@@ -349,19 +349,20 @@ hr {
 /* Sports */
 .background {
   background-color: #fff;
-  margin:8px;
+   margin: 8px; 
+  
 }
 
-.trans, h3, p{text-align: left;}
+.trans, h3, p{text-align: left;} 
 
-.full{width: 100%;}
+.full{width: 100%;}  
 
-.sports2{display: block;}
+.sports2{display: block;} 
 
 .transform {
   display: grid;
   grid-template-columns: repeat(1, 1fr);  
-}
+} 
 
 /* second-section-end */
 
@@ -373,8 +374,8 @@ hr {
    
 }
 .entertainment-background {
-  display: flex;
-  flex-basis: 100%;
+  display: flex; 
+   flex-basis: 100%;   
   flex-direction: column;
   margin: 10px; 
    gap: 1rem;
@@ -384,17 +385,17 @@ hr {
 
 /* .background2 > *{margin: 0 auto 0 auto;  } */
 
-.entertainment-pic {
+ .entertainment-pic {
   margin-bottom: 30px; 
   color: #fff;
   width: 100%;
   
-}
+} 
 
 .entertainment-middle {
   width: 100%;
   height: 200px;
-}
+} 
 
 .entertainmentheading{
   color: #fff;
@@ -402,7 +403,7 @@ hr {
   padding-left: 28px; 
   
   
-}
+} 
 
 .sub {
   color: #fff;
@@ -414,7 +415,7 @@ hr {
 .pastor {
   flex-direction: column;
   display: flex;
-}
+} 
 
 .col {
   flex: 1;
@@ -452,15 +453,15 @@ footer {
   background-color: #d20b12;
 }
 
-.foot {
+ .foot {
   height: 50px;
-}
+} 
 
-.footerinput {
+ .footerinput {
   width: 100%;
   height: 30px;
   margin-bottom: 16px;
-}
+} 
 
 ::placeholder {
   color: #d20b12;
@@ -486,12 +487,12 @@ footer {
   font-size: 14px;
 }
 
-.flexcontainer {
+ .flexcontainer {
   display: flex;
   flex-basis: 100%;
   gap: 2rem;
   margin: 8px;
-}
+} 
 
 .glass {
   color: #000;
