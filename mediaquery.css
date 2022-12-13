@@ -3,9 +3,12 @@
  @media only screen and (min-width: 300px) {  
     .foot-icon2 {
     color: #fff;
-    padding-top: 2%;
-    display: none;
+    padding-top: 2%; 
+     display: none; 
+     
   } 
+  .mobile{height: 12%;
+  }
 }  
 
 /* TABLET VIEW (767PX) to LARGE LAPTOP SCREEN (1440PX)*/
@@ -19,7 +22,8 @@
   .desktop {
      display: inline-block; 
      width: 100%;
-    height: 40px;
+     height: 40px; 
+    
   }
 
   p{font-size: 18px;}
@@ -49,6 +53,7 @@
     justify-content: space-around;
     align-items: center;    
     flex-wrap: wrap;
+    
   } 
   
   
@@ -241,6 +246,7 @@ display: none;
 /* nav */
 .mobile {
   display: none;
+  
 }
 
 .desktop {
