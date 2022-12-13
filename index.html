@@ -1,341 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Star</title>
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="mediaquery.css"> 
-     <script src="/main.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+    <script src="/main.js"></script>
+    <script src="/javascript.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon_package_v0.16/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon_package_v0.16/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <!-- navigation-start -->
+    <nav class="mobile">
+      <button
+        onclick="myFunction()"
+        class="fa-solid fa-bars menu dropbtn"
+      ></button>
+      <div class="mainicon">
+        <img class="img1" src="/image/Jca-Star_site-logo.png" alt="star logo" />
+      </div>
+    </nav>
 
-</head>
-<body>
+    <nav class="desktop">
+      <div class="star">
+        <img class="img1" src="/image/Jca-Star_site-logo.png" alt="star logo" />
+      </div>
+      <button
+        onclick="myFunction()"
+        class="fa-solid fa-bars menu dropbtn"
+      ></button>
 
-  <!-- navigation-start -->
-       <nav class="mobile">
-      
-<button onclick="myFunction()" class="fa-solid fa-bars menu dropbtn" ></button>
-<div class="mainicon"><img class="img1" src="/image/Jca-Star_site-logo.png" alt="star logo"></div>
-
-</nav>  
-
-<nav class="desktop">
-  <div class="star"><img class="img1" src="/image/Jca-Star_site-logo.png" alt="star logo"></div>
-  <button onclick="myFunction()" class="fa-solid fa-bars menu dropbtn" ></button>
-  
-  <ul>
-   <li><a href="">Home</a></li>
-   <li><a href="">News</a></li>
-   <li><a href="">Sports</a></li> 
-   <li><a href="">Entertainment</a></li>
-   <li><a href="">Tell me Pastor</a></li>
-   <li><a href="">Media archive</a></li>
-   <li><i class="fa-solid fa-magnifying-glass"></i> </li>
-  </ul>
-</nav> 
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Sports</a></li>
+        <li><a href="">Entertainment</a></li>
+        <li><a href="">Tell me Pastor</a></li>
+        <li><a href="">Media archive</a></li>
+      </ul>
+    </nav>
     <!-- navigation-end -->
 
-
-
     <!-- dropdown-menu-start -->
-        <div class="dropdown">
-            <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Home</a>
-                    <a href="#">News</a>
-                    <a href="#">Sports</a>
-                    <a href="#">Entertainment</a>
-                    <a href="#">Tell Me Pastor</a>
-                    <a href="#">Event Guide</a>
-                    <a href="#">Lifestyle</a>
-                    <a href="#">Features</a>
-                    <a href="#">Commentary</a>
-                    <a href="#">Media Archive</a>
-                    <a href="#">Star epaper</a>
-                    <a href="#">Advertise With Us</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Desktop View</a>
-                    
+    <div class="dropdown">
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Sports</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Tell Me Pastor</a>
+        <a href="#">Event Guide</a>
+        <a href="#">Lifestyle</a>
+        <a href="#">Features</a>
+        <a href="#">Commentary</a>
+        <a href="#">Media Archive</a>
+        <a href="#">Star epaper</a>
+        <a href="#">Advertise With Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Desktop View</a>
+      </div>
+    </div>
+    <!-- dropdown-menu-end -->
+
+    <!-- first-section-start -->
+    <!-- Latest News -->
+    <div class="latest">
+      <div class="shifter">
+        <i class="fa-solid fa-circle-exclamation"> </i>
+        <div class="hi"><h1>LATEST NEWS</h1></div>
+        <div class="slideshow-container">
+          <div class="mySlides block fade">
+            <img class="pic" src="/image/carcrash.webp" />
+            <div class="text">
+              Security expert wants cops to go after men on motorcycles
             </div>
-            </div> 
-            <!-- dropdown-menu-end -->
+          </div>
 
+          <div class="mySlides fade">
+            <img class="fade pic" src="/image/face.webp" />
+            <div class="text">
+              Former ferry operator misses being on the open sea
+            </div>
+          </div>
 
+          <div class="mySlides fade">
+            <img class="pic" src="/image/people.webp" />
+            <div class="text">
+              Tawes Pen rocked by quadruple murder near road side shop
+            </div>
+          </div>
+        </div>
 
-            <!-- first-section-start -->
-            <!-- Latest News -->
-              <div class="latest"> 
-                
-                 <div class="shifter"> 
-                <i class= "fa-solid fa-circle-exclamation"> </i><div class="hi"><h1>LATEST NEWS</h1></div> 
-                <div class="slideshow-container"> 
-              
-                  <div class=" mySlides block  fade ">
-                    <img class=" pic" src="/image/carcrash.webp" >   
-                    <div class="text">
-                   Security expert wants cops to go after men on motorcycles
-                    </div>
-                  </div> 
-                  
-                  <div class=" mySlides  fade ">
-                    <img class=" fade pic"src="/image/face.webp" >  
-                    <div class="text">Former ferry operator misses being on the open sea</div>
-                  </div>
-                  
-                  <div class="mySlides fade">
-                    <img  class="pic" src="/image/people.webp">  
-                    <div class="text">Tawes Pen rocked by quadruple murder near road side shop</div>
-                  </div>
-                  
-                </div>
-                
-                
-                <div class="center">
-                  <a class="prev " onclick="plusSlides(-1)">&#10094;</a> 
-                  <span class="dot " onclick="currentSlide(1)"></span> 
-                  <span class="dot" onclick="currentSlide(2)"></span> 
-                  <span class="dot" onclick="currentSlide(3)"></span>  
-                  <a class="next " onclick="plusSlides(1)">&#10095;</a>    
+        <div class="center">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                      
-                     <div class="left">
-                    <i class="fa-brands fa-facebook socialmedia-icon"></i>
-                    <i class="fa-brands fa-instagram socialmedia-icon"></i>
-                    <i class="fa-brands fa-twitter socialmedia-icon"></i>
-                    <i class="fa-solid fa-envelope socialmedia-icon"></i>
-                  </div><br>
-                  
+          <div class="left">
+            <i class="fa-brands fa-facebook socialmedia-icon"></i>
+            <i class="fa-brands fa-instagram socialmedia-icon"></i>
+            <i class="fa-brands fa-twitter socialmedia-icon"></i>
+            <i class="fa-solid fa-envelope socialmedia-icon"></i>
+          </div>
+          <br />
 
-                   <div class="line"><hr> </div>
-                  </div>
+          <div class="line"><hr /></div>
+        </div>
+      </div>
 
-                  </div> 
-                  
-                   <div class="image-container">
-                    
-                    <div class="column1">
-                      <h2>'Bus Head' member killed in police shootout</h2>
+      <div class="image-container">
+        <div class="column1">
+          <h2>'Bus Head' member killed in police shootout</h2>
 
-      
-                <img class="manpic" src="/image/person-purple-shirt-talking.webp" alt="politician"> 
-              
-              
-              </div> 
-              <div class="column2">
-                <h2>'Bus Head' member killed in police shootout</h2>
-                 <p>Two men were shot and killed a short while ago during a police operation along the North-South Highway near the Linstead exit in St Catherine.
+          <img
+            class="manpic"
+            src="/image/person-purple-shirt-talking.webp"
+            alt="politician"
+          />
+        </div>
+        <div class="column2">
+          <h2>'Bus Head' member killed in police shootout</h2>
+          <p>
+            Two men were shot and killed a short while ago during a police
+            operation along the North-South Highway near the Linstead exit in St
+            Catherine. Dead is Odane Christopher, an alleged high-ranking member
+            of the 'Bus Head Gang' which operates in Montego Bay St James, and
+            another unidentified man.
+          </p>
+        </div>
+      </div>
+    </div>
 
-                  Dead is Odane Christopher, an alleged high-ranking member of the 'Bus Head Gang' which operates in Montego Bay St James, and another unidentified man.</p> 
-              </div>   
-            
-          </div> 
-              </div>
-              
+    <!-- first-section-end -->
 
-              
-              <!-- first-section-end -->
+    <!-- second-section-start -->
+    <!-- Sports -->
+    <div class="background">
+      <h3 class="sports2">SPORTS</h3>
+      <div class="transform">
+        <div class="trans">
+          <img
+            class="full"
+            src="/image/women-footballers.webp"
+            alt="woman footballer"
+          />
+          <h3>
+            James Milner: Liverpool midfielder signs new one-year contract at
+            Anfield and accepts reduced personal terms
+          </h3>
+          <p>
+            Milner's previous deal was due to expire at the end of this month;
+            the 36-year-old had external offers from one Premier League club and
+            two from overseas; the midfielder has accepted reduced personal
+            terms in signing this new contract
+          </p>
+        </div>
 
+        <div class="trans">
+          <img
+            class="full"
+            src="/image/white-racecar-diver.webp"
+            alt="race car driver"
+          />
+          <h3>Paretta Autosport ready for Road America</h3>
+          <p>
+            Race week is finally here for Paretta Autosport. More than a year
+            after the team owned by Beth Paretta with driver Simona De Silvestro
+            made its debut at the Indianapolis 500, the duo are back as the
+            program makes its first appearance with its Chevy-powered entry
+            facilitated by Ed Carpenter Racing at Road America.
+          </p>
+        </div>
 
-              <!-- second-section-start -->
-              <!-- Sports -->
-                <div class="background">
-                  
-                  <h3 class="sports2">SPORTS</h3>
-                  <div class="transform">
-                    <div class="trans">
-                      <img class="full" src="/image/women-footballers.webp" alt="woman footballer">
-                      <h3>James Milner: Liverpool midfielder signs new one-year contract at Anfield and accepts reduced personal terms</h3>
-                     <p>Milner's previous deal was due to expire at the end of this month; the 36-year-old had external offers from one Premier League club and two from overseas; the midfielder has accepted reduced personal terms in signing this new contract</p>
-                    </div>
+        <div class="trans">
+          <video class="full" controls src="/video/blindfarmer.mp4"></video>
+          <h3>Blind man puts his heart into farming</h3>
+          <p>
+            If you were to observe Norman Spence at work on his farm in
+            Kilmarnock, a district outside of New Market in St Elizabeth, you
+            wouldn’t guess that he’s blind. He manages his land, and his various
+            crops are attended to. He also performs regular checks to ensure his
+            fruits and vegetables are developing properly. Despite having no
+            sight, he surely makes it seem easy.
+          </p>
+        </div>
 
-                    <div class="trans">
-                      <img class="full" src="/image/white-racecar-diver.webp" alt="race car driver">
-                      <h3>Paretta Autosport ready for Road America
-                       </h3>
-                      <p> Race week is finally here for Paretta Autosport. More than a year after the team owned by Beth Paretta with driver Simona De Silvestro made its debut at the Indianapolis 500, the duo are back as the program makes its first appearance with its Chevy-powered entry facilitated by Ed Carpenter Racing at Road America.</p>
-                    </div>
+        <div class="trans">
+          <video
+            class="full"
+            controls
+            src="/video/Skeng - Gang Bang (Official Music Video).mp4"
+          ></video>
+          <h3>LIFE OF THE PARTY: Brush1 Chromatic, the ultimate entertainer</h3>
+          <p>
+            In an interview with THE STAR, Brush 1 discussed his role on the
+            popular sound Chromatic, making his debut as a recording artiste,
+            and plans to transform the entertainment scene.
+          </p>
+        </div>
 
-                    <div class="trans">
-                      <video class="full" controls src="/video/blindfarmer.mp4"></video>
-                      <h3>Blind man puts his heart into farming</h3>
-                      <p>If you were to observe Norman Spence at work on his farm in Kilmarnock, a district outside of New Market in St Elizabeth, you wouldn’t guess that he’s blind. He manages his land, and his various crops are attended to. He also performs regular checks to ensure his fruits and vegetables are developing properly. Despite having no sight, he surely makes it seem easy.</p>
-                          </div> 
+        <div class="trans">
+          <img
+            class="full"
+            src="/image/men-footbalers.webp"
+            alt="male foot baller"
+          />
+          <h3>
+            Jude Bellingham ranks fifth in the world for transfer value | Kylian
+            Mbappe ranks top ahead of Vinicius Junior
+          </h3>
+          <p>
+            Paris Saint-Germain forward Kylian Mbappe is most valuable player in
+            the world ahead of Real Madrid winger Vinicius Junior; six England
+            players feature in top 25 with another 12 ranking in the top 100;
+            Erling Haaland lands third spot after securing Manchester City move
+            this summer
+          </p>
+        </div>
 
-                          
-                          <div class="trans">
-                            <video class="full" controls src="/video/Skeng - Gang Bang (Official Music Video).mp4"></video>
-                            <h3>LIFE OF THE PARTY: Brush1 Chromatic, the ultimate entertainer</h3>
-                            <p>In an interview with THE STAR, Brush 1 discussed his role on the popular sound Chromatic, making his debut as a recording artiste, and plans to transform the entertainment scene.</p>
-                          </div>
-                          
-                          <div class="trans">
-                      <img class="full" src="/image/men-footbalers.webp" alt="male foot baller">
-                      <h3>Jude Bellingham ranks fifth in the world for transfer value | Kylian Mbappe ranks top ahead of Vinicius Junior</h3>
-                      <p>Paris Saint-Germain forward Kylian Mbappe is most valuable player in the world ahead of Real Madrid winger Vinicius Junior; six England players feature in top 25 with another 12 ranking in the top 100; Erling Haaland lands third spot after securing Manchester City move this summer</p>
-                    </div>
-                    
-                    <div class="trans">
-                      <img class="full" src="/image/criketers.webp" alt="cricket">
-                      <h3> Watch: Pakistan Star Cracks Up During Photoshoot Ahead Of West Indies Series</h3>
-                      <p>Pakistan's ODI series against West Indies begins from Wednesday and ahead of the start of the three-match series, the players got together for a customary photo shoot. During the shot all top Pakistan stars posed in front of the camera including captain Babar Azam,</p>
-                    </div>
-                    
-                    
-                    
-                    
-                  </div>
-                  </div>
+        <div class="trans">
+          <img class="full" src="/image/criketers.webp" alt="cricket" />
+          <h3>
+            Watch: Pakistan Star Cracks Up During Photoshoot Ahead Of West
+            Indies Series
+          </h3>
+          <p>
+            Pakistan's ODI series against West Indies begins from Wednesday and
+            ahead of the start of the three-match series, the players got
+            together for a customary photo shoot. During the shot all top
+            Pakistan stars posed in front of the camera including captain Babar
+            Azam,
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <!-- second-section-end -->
 
-                  
+    <!-- third-section-start -->
+    <!-- Entertainment -->
 
+    <div class="back">
+      <h3 class="entertainmentheading">ENTERTAINMENT</h3>
 
-                
-                <!-- second-section-end -->
+      <div class="entertainment-background">
+        <div class="entertainment-pic">
+          <img
+            class="entertainment-middle"
+            src="/image/rastaman-in-black.webp"
+            alt="Mr. Skeng Roze"
+          /><br /><br />
+          <h4 class="sub">Grime pushing 'Spanish Town era' of dancehall</h4>
 
+          <p>
+            Today, Spanish Town is arguably responsible for some of the hottest
+            names in the business, including Skeng, Roze Don, Roshawny BadG,
+            Nervz, and of course Koffee. Speaking to THE STAR, Roze Don opined
+            that we're witnessing the "Spanish Town era".
+          </p>
+        </div>
 
+        <div class="entertainment-pic">
+          <img
+            class="entertainment-middle"
+            src="/image/demarco-infront-of-piano.webp"
+            alt="Mr. Demarco"
+          /><br /><br />
+          <h4 class="sub">C-Well inspired by son's illness to pen 'Owe Dem'</h4>
+          <p>
+            The song was inspired by his son, who miraculously survived a life-
+            and -death surgery that left his organs outside his body for days.
+            C-Well's son was born in 2015 with a rare medical condition known as
+            congenital diaphrag
+          </p>
+        </div>
+        <div class="entertainment-pic">
+          <img
+            class="entertainment-middle"
+            src="/image/papie-keelo.webp"
+            alt="Mr. Papie Keelo"
+          /><br /><br />
+          <h4 class="sub">Blazing hot fun at Soca Forever</h4>
+          <p>
+            Soca Forever was among the latest make return and patrons packed the
+            Police Officers' Club on Hope Road in St Andrew on Saturday night to
+            let loose to the music of DJs including Matt Camps, King Taj and
+            Bloodline Franco. Here are the highlights from the event.
+          </p>
+        </div>
+        <div class="entertainment-pic">
+          <img
+            class="entertainment-middle"
+            src="/image/music-poducer-blue-shirt.webp"
+            alt="producer"
+          /><br /><br />
+          <h4 class="sub">Blazing hot fun at Soca Forever</h4>
+          <p>
+            "Toots would not want it any other way," a thrilled Stephenson told
+            THE WEEKEND STAR. "I am sure he would say to me, 'Pardie Jeffrey,
+            you have done right, my son, and this is going help the industry.'
+            He would say to
+          </p>
+        </div>
+      </div>
+    </div>
 
-                <!-- third-section-start -->
-                <!-- Entertainment -->
+    <!-- third-section-end -->
 
+    <!-- fourth-section-start -->
+    <!-- Tell me Pastor -->
+    <div class="testing">
+      <h2 class="pastorheading">Tell me PASTOR</h2>
 
-                <div class="back">
-                   <h3 class="entertainmentheading">ENTERTAINMENT</h3> 
-                  
-                  <div class="entertainment-background">
-                    
-                    <div class="entertainment-pic">
-                      <img class="entertainment-middle" src="/image/rastaman-in-black.webp" alt="Mr. Skeng Roze"><br><br>
-<h4 class="sub">Grime pushing 'Spanish Town era' of dancehall</h4>
+      <div class="pastor">
+        <div class="col">
+          <div class="subpics">
+            <img src="image/pic1.PNG" alt="sex symbol" />
+          </div>
+          <h3>My older girlfriend is very freaky</h3>
+          <p>
+            Dear Pastor, I am a 33-year-old man. I was living with a woman for
+            three years. I broke up with her because she was two-timing me.
+            Whenever I went to work, she allowed men to come to the house.
+            Neighbours told me about it and one of the neighbours used to go to
+            the house to see her and he told people that I was such a fool. She
+            quit her job and was home for a year. She and I had a big fight
+            because I came home and I knew that she had just had sex.
+          </p>
+        </div>
+        <div class="col">
+          <div class="subpics"><img src="/image/pic2.PNG" alt="money" /></div>
+          <h3>Think my man fathered another child</h3>
+          <p>
+            Dear Pastor, I have been in a relationship since November 2020. At
+            the time when we met, my partner told me that he had two daughters.
+            Last September, he told me that there is a possibility that he may
+            have a son, as he was playing around with a woman who lived with her
+            partner and she got pregnant. So, there is a possibility that the
+            son she has may be his. Around February of this year, he told me
+            that a friend of his told him that the child is his.
+          </p>
+        </div>
+        <div class="col">
+          <div class="subpics">
+            <img src="/image/pic3.PNG" alt="sexy lady" />
+          </div>
+          <h3>Husband cheating with a girl I used to help</h3>
+          <p>
+            Dear Pastor, I have been married for 13 years and I love my husband.
+            We live happily. He said I was a good wife to him. He didn't want me
+            to go out to work, but I did my little buying and selling right at
+            our gate. I didn't have to depend on him for anything. I sold
+            everything. Farmers used to come by with goods and I used to buy
+            from them and sell back to the people in the area. Even taxi men
+            would stop and buy drinks from me. I also had a patty warmer which I
+            kept on my verandah, and I sold patties to everybody.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <!-- fourth-section-end -->
 
-<p>Today, Spanish Town is arguably responsible for some of the hottest names in the business, including Skeng, Roze Don, Roshawny BadG, Nervz, and of course Koffee. Speaking to THE STAR, Roze Don opined that we're witnessing the "Spanish Town era".
+    <!-- footer-section-start -->
+    <footer>
+      <div class="bottom">
+        <div class="foot-icon">
+          <h3>Connect with us:</h3>
+          <i class="fa-brands fa-facebook socialmedia-icon"></i>
+          <i class="fa-brands fa-instagram socialmedia-icon"></i>
+          <i class="fa-brands fa-twitter socialmedia-icon"></i>
+          <i class="fa-solid fa-envelope socialmedia-icon"></i>
+        </div>
 
-</p>
-                    </div>
+        <input
+          class="footerinput"
+          type="text"
+          placeholder=" Search The Star..."
+        />
+        <div>
+          <img class="foot" src="/image/Jca-Star_site-logo.png" alt="" />
+        </div>
 
-                    <div class="entertainment-pic">
-                      <img class="entertainment-middle" src="/image/demarco-infront-of-piano.webp" alt="Mr. Demarco"><br><br>
-<h4 class="sub">C-Well inspired by son's illness to pen 'Owe Dem'</h4>
-<p>The song was inspired by his son, who miraculously survived a life- and -death surgery that left his organs outside his body for days. C-Well's son was born in 2015 with a rare medical condition known as congenital diaphrag</p>
-                    </div>
-                    <div class="entertainment-pic">
-                      <img class="entertainment-middle"  src="/image/papie-keelo.webp" alt="Mr. Papie Keelo"><br><br>
-<h4 class="sub">Blazing hot fun at Soca Forever</h4>
-<p>Soca Forever was among the latest make return and patrons packed the Police Officers' Club on Hope Road in St Andrew on Saturday night to let loose to the music of DJs including Matt Camps, King Taj and Bloodline Franco.
+        <div class="foot-icon2">
+          <h3>Connect with us:</h3>
+          <i class="fa-brands fa-facebook socialmedia-icon"></i>
+          <i class="fa-brands fa-instagram socialmedia-icon"></i>
+          <i class="fa-brands fa-twitter socialmedia-icon"></i>
+          <i class="fa-solid fa-envelope socialmedia-icon"></i>
+        </div>
+      </div>
 
-  Here are the highlights from the event.</p>
-                    </div>
-                    <div class="entertainment-pic">
-                      <img class="entertainment-middle"  src="/image/music-poducer-blue-shirt.webp" alt="producer"><br><br>
-                      <h4 class="sub">Blazing hot fun at Soca Forever</h4>
-                      <p>"Toots would not want it any other way," a thrilled Stephenson told THE WEEKEND STAR. "I am sure he would say to me, 'Pardie Jeffrey, you have done right, my son, and this is going help the industry.' He would say to</p>
+      <div class="flexcontainer">
+        <div class="contact">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Gleaner Blogs</a></li>
+          <li><a href="#">Gleaner Online</a></li>
+          <li><a href="#">Go-Jamaica</a></li>
+          <li><a href="#">Feedback</a></li>
+        </div>
 
-                    </div>
-                  </div>
-                </div> 
-                  
+        <div class="contact">
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Advertise with Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">RSS Feed</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </div>
 
-                <!-- third-section-end -->
+        <div class="contact">
+          <li><a href="#">Dating</a></li>
+          <li><a href="#">Star ePaper</a></li>
+          <li><a href="#">Mobile</a></li>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; Copyright 2021 The Gleaner Company (Media) Limited. A member of
+        the RJRGLEANER Communications Group. All Rights Reserved.
+      </p>
+    </footer>
 
-               <!-- fourth-section-start -->
-               <!-- Tell me Pastor -->
-               <div class="testing">
-
-                <h2 class="pastorheading"> Tell me PASTOR  </h2>
-
-             
-
-                 <div class="pastor">
-                   <div class="col">
-                     <div  class="subpics"><img  src="image/pic1.PNG" alt="sex symbol"></div>
-                     <h3 >My older girlfriend is very freaky</h3>
-                     <p>Dear Pastor,
-
-                      I am a 33-year-old man. I was living with a woman for three years. I broke up with her because she was two-timing me. Whenever I went to work, she allowed men to come to the house. Neighbours told me about it and one of the neighbours used to go to the house to see her and he told people that I was such a fool.
-                      
-                      She quit her job and was home for a year. She and I had a big fight because I came home and I knew that she had just had sex. </p>
-                    </div>
-                    <div class="col">
-                      <div class="subpics"><img src="/image/pic2.PNG" alt="money"></div>
-                      <h3>Think my man fathered another child</h3>
-                      <p>Dear Pastor,
-
-                        I have been in a relationship since November 2020. At the time when we met, my partner told me that he had two daughters.
-                        
-                        Last September, he told me that there is a possibility that he may have a son, as he was playing around with a woman who lived with her partner and she got pregnant. So, there is a possibility that the son she has may be his. Around February of this year, he told me that a friend of his told him that the child is his.</p>
-                    </div>
-                    <div class="col">
-                      <div class="subpics"><img src="/image/pic3.PNG" alt="sexy lady"></div>
-                      <h3>Husband cheating with a girl I used to help</h3>
-                      <p>Dear Pastor,
-
-                        I have been married for 13 years and I love my husband. We live happily. He said I was a good wife to him. He didn't want me to go out to work, but I did my little buying and selling right at our gate. I didn't have to depend on him for anything. I sold everything. Farmers used to come by with goods and I used to buy from them and sell back to the people in the area. Even taxi men would stop and buy drinks from me. I also had a patty warmer which I kept on my verandah, and I sold patties to everybody.
-                        
-                      </p>
-                    </div>
-                  </div>
-                </div><br><br>
-               <!-- fourth-section-end -->
-
-<!-- footer-section-start -->
-         <footer>
-          <div class="bottom">
-            <div class="foot-icon "> 
-              <h3>Connect with us:</h3>
-                <i class="fa-brands fa-facebook socialmedia-icon"></i>
-              <i class="fa-brands fa-instagram  socialmedia-icon"></i>
-              <i class="fa-brands fa-twitter socialmedia-icon"></i>
-              <i class="fa-solid fa-envelope socialmedia-icon"></i>
-            </div>  
-         
-              <input class="footerinput" type="text"  placeholder=" Search The Star..." >
-              <div ><img  class="foot"src="/image/Jca-Star_site-logo.png" alt=""></div> 
-            
-              <div class="foot-icon2 "> 
-                <h3>Connect with us:</h3>
-                  <i class="fa-brands fa-facebook socialmedia-icon"></i>
-                <i class="fa-brands fa-instagram  socialmedia-icon"></i>
-                <i class="fa-brands fa-twitter socialmedia-icon"></i>
-                <i class="fa-solid fa-envelope socialmedia-icon"></i>
-              </div>  
-           </div>
-
-
-          <div class="flexcontainer">  
-<div class="contact">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Gleaner Blogs</a></li>
-  <li><a href="#">Gleaner Online</a></li>
-  <li><a href="#">Go-Jamaica</a></li>
-  <li><a href="#">Feedback</a></li>
- </div>  
-
- <div class="contact"> 
-  <li><a href="#">Disclaimer</a></li>
-  <li><a href="#">Advertise with Us</a></li>
-  <li><a href="#">Privacy Policy</a></li>
-  <li><a href="#">RSS Feed</a></li>
-  <li><a href="#">Contact Us</a></li>
-</div> 
-
-<div class="contact"> 
-  <li><a href="#">Dating</a></li>
-  <li><a href="#">Star ePaper</a></li>
-  <li><a href="#">Mobile</a></li>
-</div> 
-
-</div>
- <p class="copyright">&copy; Copyright 2021 The Gleaner Company (Media) Limited. A member of the  RJRGLEANER Communications Group. All Rights Reserved. </p>  
-</footer> 
-      
-<!-- footer-section-end -->
-</body>
+    <!-- footer-section-end -->
+  </body>
 </html>
